@@ -18,6 +18,7 @@ import com.bank_details_backend.service.BankDetailsService;
 @RequestMapping("/api/bank-details")
 @CrossOrigin(origins = "*")
 public class BankDetailsController {
+	
 	private final BankDetailsService service;
 
 	public BankDetailsController(BankDetailsService service) {

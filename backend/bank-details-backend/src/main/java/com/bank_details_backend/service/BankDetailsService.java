@@ -11,6 +11,7 @@ import com.bank_details_backend.repository.BankDetailsRepository;
 public class BankDetailsService {
 
     private final BankDetailsRepository repository;
+    
     public BankDetailsService(BankDetailsRepository repository){
         this.repository=repository;
     }
