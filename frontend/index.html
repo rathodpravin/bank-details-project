@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bank Details</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <h1>Bank Details</h1>
+
+            <p>Enter your bank account information</p>
+
+        </div>
+
+
+        <!-- Bank Form -->
+        <form id="bankForm">
+
+            <!-- Account Information -->
+            <fieldset>
+
+                <legend>Account Information</legend>
+
+
+                <!-- Row 1 -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="accountHolder">
+                            Account Holder Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="accountHolder"
+                            name="accountHolder"
+                            placeholder="Enter account holder name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="accountNumber">
+                            Account Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="accountNumber"
+                            name="accountNumber"
+                            placeholder="Enter account number"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Row 2 -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="confirmAccountNumber">
+                            Confirm Account Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="confirmAccountNumber"
+                            name="confirmAccountNumber"
+                            placeholder="Re-enter account number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="ifsc">
+                            IFSC Code
+                        </label>
+
+                        <input
+                            type="text"
+                            id="ifsc"
+                            name="ifsc"
+                            placeholder="Example: SBIN0001234"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Row 3 -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="bankName">
+                            Bank Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="bankName"
+                            name="bankName"
+                            placeholder="Enter bank name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="branch">
+                            Branch Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="branch"
+                            name="branch"
+                            placeholder="Enter branch name"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Row 4 -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="accountType">
+                            Account Type
+                        </label>
+
+                        <select
+                            id="accountType"
+                            name="accountType"
+                            required
+                        >
+
+                            <option value="">
+                                -- Select Account Type --
+                            </option>
+
+                            <option value="savings">
+                                Savings Account
+                            </option>
+
+                            <option value="current">
+                                Current Account
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- Bank Address -->
+            <fieldset>
+
+                <legend>Bank Address</legend>
+
+
+                <!-- Address -->
+                <div class="form-row">
+
+                    <div class="form-group full">
+
+                        <label for="address">
+                            Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            rows="4"
+                            placeholder="Enter bank address"
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- City and State -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="city">
+                            City
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="Enter city"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="state">
+                            State
+                        </label>
+
+                        <input
+                            type="text"
+                            id="state"
+                            name="state"
+                            placeholder="Enter state"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- PIN -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="pincode">
+                            PIN Code
+                        </label>
+
+                        <input
+                            type="text"
+                            id="pincode"
+                            name="pincode"
+                            placeholder="Enter PIN code"
+                            maxlength="6"
+                        >
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button
+                    type="submit"
+                    class="save-btn"
+                >
+                    Save Bank Details
+                </button>
+
+
+                <button
+                    type="reset"
+                    class="reset-btn"
+                >
+                    Reset
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

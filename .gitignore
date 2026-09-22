@@ -1,0 +1,24 @@
+# Maven
+backend/target/
+
+# Maven wrapper generated files
+backend/.mvn/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+application-local.properties
+
+# OS files
+.DS_Store
+Thumbs.db

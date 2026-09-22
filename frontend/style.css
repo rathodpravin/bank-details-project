@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #e3f2fd,
+        #f5f7fa
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 850px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.15);
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.header h1 {
+    color: #0d47a1;
+    margin-bottom: 8px;
+}
+
+
+.header p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+fieldset {
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+legend {
+    padding: 0 10px;
+
+    color: #0d47a1;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+.form-row {
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.form-group {
+    width: 50%;
+}
+
+
+.form-group.full {
+    width: 100%;
+}
+
+
+label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    color: #333;
+
+    font-size: 14px;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1976d2;
+
+    box-shadow:
+        0 0 5px
+        rgba(25, 118, 210, 0.25);
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+
+button {
+    border: none;
+
+    padding: 13px 30px;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.save-btn {
+    background: #0d47a1;
+
+    color: white;
+}
+
+
+.save-btn:hover {
+    background: #083579;
+}
+
+
+.reset-btn {
+    background: #e0e0e0;
+
+    color: #333;
+}
+
+
+.reset-btn:hover {
+    background: #c7c7c7;
+}
+
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 15px;
+    }
+
+
+    .container {
+        padding: 20px;
+    }
+
+
+    .form-row {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .form-group {
+        width: 100%;
+    }
+
+
+    .buttons {
+        flex-direction: column;
+    }
+
+
+    button {
+        width: 100%;
+    }
+
+}
